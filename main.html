@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+        </div>
+        <div class="location-search">
+            <input type="text" id="locationInput" placeholder="Enter Location">
+            <button>Search</button>
+        </div>
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> <span id="defaultLocation">Chennai</span>
+            <p id="currentDate"><i class="fas fa-calendar-alt"></i> May 17, 2024</p> 
+        </div>
+        <div class="weather-info">
+            <div class="current-weather">
+                <h2>Current Conditions</h2>
+                <div id="currentWeather">
+                    <i class="fas fa-thermometer-half"></i> <span id="currentTemp">30 °C</span><br>
+                    <i class="fas fa-cloud-sun"></i> <span id="currentDescription">Partly Cloudy</span>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast">
+                    <div class="forecast-day">
+                        <h3>Tomorrow</h3>
+                        <i class="fas fa-cloud-sun-rain"></i> <span>32 °C</span>
+                        <p>Scattered Showers</p>
+                    </div>
+                    <div class="forecast-day">
+                        <h3>Day After Tomorrow</h3>
+                        <i class="fas fa-sun"></i> <span>34 °C</span>
+                        <p>Sunny</p>
+                    </div>
+                    <div class="forecast-day">
+                        <h3>Third Day</h3>
+                        <i class="fas fa-cloud"></i> <span>31 °C</span>
+                        <p>Cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
